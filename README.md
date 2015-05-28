@@ -13,7 +13,10 @@ On client:
 var securityConfig = {
     loginTemplate: "login",
     notAuthorizedTemplate: "notAuthorized",
-    authenticate: true
+    //authenticate: true
+    authenticate: {
+        except: ["faq", "about", "contact"]
+    }
 }
 Router.plugin("security", securityConfig);
 ```
