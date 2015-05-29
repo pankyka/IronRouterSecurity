@@ -34,9 +34,9 @@ Routes now can have a property named `authorization`, with this we can define wh
 This property can be a *Function* (custom logic for authorization) or an *Object*.
  
  ```js
-Router.route("/accounts/edit/:_id?", {
-    name: "accounts.edit",
-    template: "editAccount",
+Router.route("/accounts/:_id?", {
+    name: "accounts",
+    template: "accounts",
     authorize: {
         allow: ["admin", "manager"],
         deny: ["client"]
@@ -55,3 +55,6 @@ Arguments:
 1. routeName - name of the route
 2. class - name of the class if the route is active, default value: "active"
 
+```js
+<a href="{{pathFor "accounts"}}" class="{{isActiveRoute "accounts"}}">Accounts</a>
+```
