@@ -18,14 +18,15 @@ var securityConfig = {
 }
 Router.plugin("security", securityConfig);
 ```
+Property | Description
+---------|------------
+`loginTemplate` | *String* Name of the login screen template
 
-`loginTemplate` *String* Name of the login screen template
+`notAuthorizedTemplate` | *String* Name of the 'not authorized' template
 
-`notAuthorizedTemplate` *String* Name of the 'not authorized' template
+`authenticate` | *Boolean, Object* If not exist, authentication not required only if `authorization` is defined on the route
 
-`authenticate` *Boolean, Object* If not exist, authentication not required only if `authorization` is defined on the route
-
-`authenticate.except` *[String]* An Array of route names, which doesn't need authentication
+`authenticate.except` | *[String]* An Array of route names, which doesn't need authentication
 
 
 #####Authorize route
