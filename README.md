@@ -6,9 +6,7 @@ Authentication and authorization for Iron.Router Meteor plugin.
     iron:router@1.0.0 or above
     alanning:roles@1.2.0 or above
 
-#####Usage
-
-On client
+#####Configuration
 ```js
 var securityConfig = {
     loginTemplate: "login",
@@ -21,8 +19,6 @@ var securityConfig = {
 Router.plugin("security", securityConfig);
 ```
 
-Configuration:
-
 `loginTemplate` *String* Name of the login screen template
 
 `notAuthorizedTemplate` *String* Name of the 'not authorized' template
@@ -32,7 +28,7 @@ Configuration:
 `authenticate.except` *[String]* An Array of route names, which doesn't need authentication
 
 
-On routes
+#####Authorize route
 
 Routes now can have a property named `authorization`, with this we can define which permissions is needed to access the route. 
 This property can be a *Function* (custom logic for authorization) or an *Object*.
@@ -50,5 +46,7 @@ Router.route("/accounts/edit/:_id?", {
 
 Not necessary to define each property (`allow`, `deny`).
 
-UI Helpers
+#####UI Helpers
+
+
 
