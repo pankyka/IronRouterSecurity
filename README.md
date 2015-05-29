@@ -2,6 +2,8 @@
 
 Authentication and authorization for Iron.Router Meteor plugin.
 
+> This plugin uses alanning:roles package to authorize users.
+
 #####Dependencies
     iron:router@1.0.0 or above
     alanning:roles@1.2.0 or above
@@ -20,7 +22,7 @@ Router.plugin("security", securityConfig);
 ```
 |Property | Description|
 |---------|------------|
-|<pre>loginTemplate</pre> | *String* Name of the login screen template|
+|`loginTemplate` | *String* Name of the login screen template|
 |`notAuthorizedTemplate` | *String* Name of the 'not authorized' template|
 |`authenticate` | *Boolean, Object* If not exist, authentication not required only if `authorization` is defined on the route|
 |`authenticate.except` | *[String]* An Array of route names, which doesn't need authentication|
