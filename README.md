@@ -22,10 +22,10 @@ Router.plugin("security", securityConfig);
 ```
 |Property | Description|
 |---------|------------|
-|`loginTemplate` | *String* Name of the login screen template|
-|`notAuthorizedTemplate` | *String* Name of the 'not authorized' template|
-|`authenticate` | *Boolean, Object* If not exist, authentication not required only if `authorization` is defined on the route|
-|`authenticate.except` | *[String]* An Array of route names, which doesn't need authentication|
+| _loginTemplate_ | *String* Name of the login screen template|
+| _notAuthorizedTemplate_ | *String* Name of the 'not authorized' template|
+| _authenticate_ | *Boolean, Object* If not exist, authentication not required only if `authorization` is defined on the route|
+| _authenticate.except_ | *[String]* An Array of route names, which doesn't need authentication|
 
 
 #####Authorize route
