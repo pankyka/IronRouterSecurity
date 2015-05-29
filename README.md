@@ -51,6 +51,7 @@ Not necessary to define each property (`allow`, `deny`).
 `isActiveRoute` 
 
 Arguments:
+
 1. routeName - name of the route
 2. class - name of the class if the route is active, default value: "active"
 
