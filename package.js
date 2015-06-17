@@ -1,8 +1,8 @@
 Package.describe({
     name: "pankyka:iron-router-security",
-    version: "0.0.1",
-    summary: "",
-    git: "",
+    version: "1.0.0",
+    summary: "Authentication and authorization for Iron.Router plugin. ",
+    git: "https://github.com/pankyka/IronRouterSecurity",
     documentation: "README.md"
 });
 
